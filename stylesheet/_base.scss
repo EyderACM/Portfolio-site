@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+}
+
+.areas-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
