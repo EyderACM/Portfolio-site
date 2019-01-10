@@ -1,3 +1,6 @@
+$gray: #454545;
+$galacticBlue: #5B58FF;
+
 html {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -9,10 +12,56 @@ html {
 
 body {
   width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: $gray;
 }
 
 .areas-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  padding: 0;
+
+  * {
+    margin: 0;
+    font-size: 1rem;
+    padding: 5px 8px;
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+.hero {  
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;    
+
+    .wrap { 
+      width: 70vw;
+      margin: 0 auto;
+
+      .hero-link {
+        color: $galacticBlue;
+        text-decoration: none;
+      }
+
+      .name {
+        font-weight: 600;
+      }
+
+      .hero-title {
+        font-weight: 500;
+        font-size: 2.3rem;
+        text-align: center;        
+      }
+    }    
+  }
 }
