@@ -20,6 +20,7 @@ body {
 .areas-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   padding: 0;
