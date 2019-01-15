@@ -65,8 +65,9 @@ body {
 
     .hero-title {
       font-weight: 500;
-      font-size: calc(100% + 1vw);
-      text-align: center;        
+      font-size: calc(100% + 2vw);
+      line-height: 45px;
+      text-align: center;              
     }
   }    
 }
@@ -92,8 +93,6 @@ body {
         z-index: 10;
         position: relative;
         width: 100%;
-        margin: 30px 0;
-
 
         &__header {
           text-align: center;
