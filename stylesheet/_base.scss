@@ -104,3 +104,12 @@ body {
     }
   }
 }
+
+.skills__container-skills {
+  width: 60vw;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+}
