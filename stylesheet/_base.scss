@@ -123,4 +123,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;  
+
+  &__list-wrapper {
+    margin: 5px 0;
+
+    &__subtitle {
+      color: $galacticBlue;
+      font-weight: 500;
+    }
+  }
 }
