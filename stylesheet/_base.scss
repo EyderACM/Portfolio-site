@@ -30,7 +30,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  padding: 0;    
+  padding: 0;      
 
   * {
     margin: 0;
@@ -46,6 +46,7 @@ body {
   height: 80vh;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .container {
@@ -54,6 +55,7 @@ body {
   padding: 0 1.5rem;    
 
   &__secondary-header {
+    color: black;
     font-weight: 500;
   }
 
@@ -120,6 +122,7 @@ body {
   width: 60vw;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 2.4rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;  
@@ -128,8 +131,31 @@ body {
     margin: 5px 0;
 
     &__subtitle {
-      color: $galacticBlue;
+      color: $galacticBlue;      
+      text-align: center;      
+      font-size: 20px;
       font-weight: 500;
+    }
+
+    &__list {
+      font-size: 18px;
+      line-height: 1.7;
+      letter-spacing: -.2px;
+    }
+  }
+}
+
+.about-me {
+  .wrapper {
+    &__info {
+      width: 350px;
+      margin: 0px auto;
+      margin-bottom: 2.4rem;
+      &__paragraph {
+        font-size: 21px;
+        line-height: 1.7;
+        letter-spacing: -.2px;
+      }
     }
   }
 }
