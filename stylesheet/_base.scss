@@ -52,7 +52,7 @@ body {
 .container {
   width: 100vw;
   margin: 0 auto;
-  padding: 0 1.5rem;    
+  padding: 0 1.2rem;    
 
   &__secondary-header {
     color: black;
@@ -148,13 +148,43 @@ body {
 .about-me {
   .wrapper {
     &__info {
-      width: 350px;
-      margin: 0px auto;
+      max-width: 768px;
+      padding: 0px 2.4rem;
       margin-bottom: 2.4rem;
       &__paragraph {
         font-size: 21px;
         line-height: 1.7;
         letter-spacing: -.2px;
+      }
+    }
+  }
+}
+
+
+.contact {
+
+  .image-container {
+    max-width: 768px;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+
+    .image-wrapper {      
+      .image {
+        width: calc(50px + 1.1rem);
+        margin: 10px;
+        fill: $gray;
+      }
+
+      .image:hover {
+        width: 70px;
+        margin: 10px;
+        fill: $galacticBlue;
       }
     }
   }
