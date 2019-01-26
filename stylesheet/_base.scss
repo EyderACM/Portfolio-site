@@ -91,15 +91,17 @@ body {
   &__wrapper {
    position: relative;
    display: block;  
-   font-size: 0; //To change in code
+   font-size: 15px; //To change in code
    line-height: 0; 
    margin: 20px;
+   text-decoration: none;
 
     .project-title {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
+      position: relative;      
+      color: $gray;      
+      width: 100%;      
+      height: 100%;    
+      z-index: 10; 
     }
     
     .image-placeholder {      
@@ -114,9 +116,7 @@ body {
   }
 }
 
-.project-title h3 {
-  position: absolute;  
-}
+
 
 .skills__container-skills {
   width: 60vw;
