@@ -121,15 +121,16 @@ body {
 
 .skills__container-skills {
   width: 60vw;
-  display: flex;
+  display: grid;
   margin: 0 auto;
   margin-bottom: 2.4rem;
   justify-content: center;
   align-items: center;
-  flex-direction: column;  
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
   &__list-wrapper {
     margin: 5px 0;
+    justify-self: center;
 
     &__subtitle {
       color: $galacticBlue;      
@@ -170,15 +171,14 @@ body {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));    
     justify-items: center;
     align-items: center;
     margin-bottom: 2.4rem;
 
     .image-wrapper {      
       .image {
-        width: calc(50px + 1.1rem);
+        width: calc(50px + .5rem);
         margin: 10px;
         fill: $gray;
       }
