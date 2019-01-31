@@ -67,6 +67,16 @@ body {
     .hero-link {
       color: $galacticBlue;
       text-decoration: none;
+      transition: .5s;
+    }
+
+    .hero-link:hover {          
+      background: url("../images/background.png") repeat-x;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;         
+      animation: moveBg 5s linear infinite;      
+      -webkit-animation: moveBg 5s linear  infinite;  
     }
 
     .name {
@@ -181,11 +191,46 @@ body {
         width: calc(50px + .5rem);
         margin: 10px;
         fill: $gray;
+        transition: .3s;
       }
 
-      .image:hover {                
-        fill: $galacticBlue;
+      .image.github:hover {                
+        fill: #ffd32a;
+      }
+
+      .image.linkedIn:hover {
+        fill: #ff3f34;
+      }
+
+      .image.twitter:hover {
+        fill: #4bcffa;
+      }
+
+      .image.dribbble:hover {
+        fill: #ff49f0;
       }
     }
   }
+}
+
+/*Text background animation*/
+
+@keyframes moveBg {
+  0% {
+    background-position: 0px 0px;   
+  }
+
+  100% {
+    background-position: 750px 0px; 
+  }  
+}
+
+@keyframes changeColor {
+  0% {
+    color: $galacticBlue;
+  }
+
+  100% {
+    color: transparent;
+  }  
 }
