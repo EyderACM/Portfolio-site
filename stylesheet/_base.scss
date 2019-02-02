@@ -24,8 +24,8 @@ body {
   padding: 0;
 }
 
-.areas-list {
-  display: flex;
+.areas-list {  
+  display: flex;  
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
@@ -67,14 +67,14 @@ body {
     .hero-link {
       color: $galacticBlue;
       text-decoration: none;
-      transition: .5s;
+      transition: .5s;      
     }
 
     .hero-link:hover {          
       background: url("../images/background.png") repeat-x;
       background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;         
+      -webkit-background-clip: text;      
+      color: transparent;                  
       animation: moveBg 5s linear infinite;      
       -webkit-animation: moveBg 5s linear  infinite;  
     }
@@ -222,15 +222,5 @@ body {
 
   100% {
     background-position: 750px 0px; 
-  }  
-}
-
-@keyframes changeColor {
-  0% {
-    color: $galacticBlue;
-  }
-
-  100% {
-    color: transparent;
   }  
 }
